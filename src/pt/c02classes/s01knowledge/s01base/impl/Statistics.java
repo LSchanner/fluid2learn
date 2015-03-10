@@ -1,9 +1,9 @@
-package pt.c01interfaces.s01knowledge.s01base.impl;
+package pt.c02classes.s01knowledge.s01base.impl;
 
 import java.util.ArrayList;
 import java.util.Iterator;
 
-import pt.c01interfaces.s01knowledge.s01base.inter.IStatistics;
+import pt.c02classes.s01knowledge.s01base.inter.IStatistics;
 
 public class Statistics implements IStatistics {
 

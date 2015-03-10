@@ -68,5 +68,5 @@ public class Enquirer implements IEnquirer {
             System.out.println("fuem! fuem! fuem!");
 
     }
-
+	
 }

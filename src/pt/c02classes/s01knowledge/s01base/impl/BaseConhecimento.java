@@ -1,4 +1,4 @@
-package pt.c01interfaces.s01knowledge.s01base.impl;
+package pt.c02classes.s01knowledge.s01base.impl;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -6,19 +6,25 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.Vector;
 
-import pt.c01interfaces.s01knowledge.s01base.inter.IBaseConhecimento;
-import pt.c01interfaces.s01knowledge.s01base.inter.IDeclaracao;
-import pt.c01interfaces.s01knowledge.s01base.inter.IObjetoConhecimento;
+import pt.c02classes.s01knowledge.s01base.inter.IBaseConhecimento;
+import pt.c02classes.s01knowledge.s01base.inter.IDeclaracao;
+import pt.c02classes.s01knowledge.s01base.inter.IObjetoConhecimento;
 
 public class BaseConhecimento implements IBaseConhecimento
 {
-	public static final String DIRETORIO_RAIZ = "bin/pt/c01interfaces/s01knowledge/s02app/bd/",
+	public static final String DIRETORIO_RELATIVO = "../../s02app/bd",
 	                           EXTENSAO = ".txt";
-	String diretorio = BaseConhecimento.class.getResource(DIRETORIO_RELATIVO).getPath();
+	private String diretorio = BaseConhecimento.class.getResource(DIRETORIO_RELATIVO).getPath();
+	
+	private String scenario;
+	
+	public void setScenario(String scenario) {
+		this.scenario = scenario;
+	}
 	
     public String[] listaNomes()
     {
-    	File diretorioRaiz = new File(diretorio);
+    	File diretorioRaiz = new File(diretorio + "/" + scenario);
         
         String lista[] = diretorioRaiz.list();
         Vector<String> listaFiltrada = new Vector<String>();
@@ -35,7 +41,7 @@ public class BaseConhecimento implements IBaseConhecimento
 		Vector<IDeclaracao> vdecl = new Vector<IDeclaracao>();
 
 		try {
-    		FileReader arquivo = new FileReader(diretorio + "/" + nome + EXTENSAO);
+    		FileReader arquivo = new FileReader(diretorio + "/" + scenario + "/" + nome + EXTENSAO);
     		BufferedReader formatado = new BufferedReader(arquivo);
     	    
     	    String linha = formatado.readLine();
@@ -65,31 +71,36 @@ public class BaseConhecimento implements IBaseConhecimento
     	       valor = null;
     	
         if (linha != null) {
-        	char clinha[] = linha.toCharArray();
-        	int p = 0;
-
-        	if (clinha[p] == '\"') {
-	    		propriedade = "";
-	    		p++;
-	    		while (p < clinha.length && clinha[p] != '\"') {
-	    			propriedade += clinha[p];
-	    			p++;
-	    		}
-	    		p++;
-	    		
-	    		if (p < clinha.length) {
-	    			while (p < clinha.length && clinha[p] != '\"') 
-	        			p++;
-	    			if (p < clinha.length) {
-	    				valor = "";
-	    				p++;
-	    	    		while (p < clinha.length && clinha[p] != '\"') {
-	    	    			valor += clinha[p];
-	    	    			p++;
-	    	    		}
-	    			}
-	    		}
-	    	}
+        	if (scenario.equalsIgnoreCase("maze")) {
+        		propriedade = "maze line";
+        		valor = linha;
+        	} else {
+	        	char clinha[] = linha.toCharArray();
+	        	int p = 0;
+	
+	        	if (clinha[p] == '\"') {
+		    		propriedade = "";
+		    		p++;
+		    		while (p < clinha.length && clinha[p] != '\"') {
+		    			propriedade += clinha[p];
+		    			p++;
+		    		}
+		    		p++;
+		    		
+		    		if (p < clinha.length) {
+		    			while (p < clinha.length && clinha[p] != '\"') 
+		        			p++;
+		    			if (p < clinha.length) {
+		    				valor = "";
+		    				p++;
+		    	    		while (p < clinha.length && clinha[p] != '\"') {
+		    	    			valor += clinha[p];
+		    	    			p++;
+		    	    		}
+		    			}
+		    		}
+		    	}
+        	}
         }
         
     	IDeclaracao decl = null;
