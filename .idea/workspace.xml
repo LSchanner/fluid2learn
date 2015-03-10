@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8f0411f9-696b-4676-9d1b-85ba7d1c4210" name="Default" comment="" />
+    <list default="true" id="8f0411f9-696b-4676-9d1b-85ba7d1c4210" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="fluid2learn.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/bin/" />
@@ -33,9 +36,10 @@
       <file leaf-file-name="Enquirer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pt/c01interfaces/s01knowledge/s02app/actors/Enquirer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="1278">
-              <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="138" max-vertical-offset="1278">
+              <caret line="16" column="23" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
               <folding>
+                <element signature="e#611#612#0" expanded="true" />
                 <element signature="e#663#664#0" expanded="true" />
               </folding>
             </state>
@@ -65,8 +69,8 @@
       <file leaf-file-name="BaseConhecimento.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pt/c01interfaces/s01knowledge/s01base/impl/BaseConhecimento.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="1764">
-              <caret line="14" column="49" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="126" max-vertical-offset="1782">
+              <caret line="15" column="49" selection-start-line="15" selection-start-column="49" selection-end-line="15" selection-end-column="49" />
               <folding />
             </state>
           </provider>
@@ -86,8 +90,7 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1366" />
-    <option name="y" value="24" />
+    <option name="y" value="-744" />
     <option name="width" value="1366" />
     <option name="height" value="744" />
   </component>
@@ -147,6 +150,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="pt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fluid2learn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fluid2learn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="s01knowledge" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -170,6 +195,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pt" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -199,6 +228,10 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="pt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="s01knowledge" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -222,6 +255,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pt" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -495,7 +532,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1366" y="24" width="1366" height="744" extended-state="6" />
+    <frame x="0" y="-744" width="1366" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -564,6 +601,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="1278">
           <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
           <folding>
+            <element signature="e#611#612#0" expanded="true" />
             <element signature="e#663#664#0" expanded="true" />
           </folding>
         </state>
@@ -590,6 +628,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="1278">
           <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
           <folding>
+            <element signature="e#611#612#0" expanded="true" />
             <element signature="e#663#664#0" expanded="true" />
           </folding>
         </state>
@@ -616,6 +655,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="1065">
           <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
           <folding>
+            <element signature="e#611#612#0" expanded="true" />
             <element signature="e#663#664#0" expanded="true" />
           </folding>
         </state>
@@ -642,6 +682,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="1065">
           <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
           <folding>
+            <element signature="e#611#612#0" expanded="true" />
             <element signature="e#663#664#0" expanded="true" />
           </folding>
         </state>
@@ -668,6 +709,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="1065">
           <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
           <folding>
+            <element signature="e#611#612#0" expanded="true" />
             <element signature="e#663#664#0" expanded="true" />
           </folding>
         </state>
@@ -694,6 +736,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1035">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="e#611#612#0" expanded="true" />
             <element signature="e#663#664#0" expanded="true" />
           </folding>
         </state>
@@ -720,6 +763,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1065">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="e#611#612#0" expanded="true" />
             <element signature="e#663#664#0" expanded="true" />
           </folding>
         </state>
@@ -753,6 +797,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="705">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="e#611#612#0" expanded="true" />
             <element signature="e#663#664#0" expanded="true" />
           </folding>
         </state>
@@ -760,9 +805,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pt/c01interfaces/s01knowledge/s02app/actors/Enquirer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1065">
-          <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="138" max-vertical-offset="1278">
+          <caret line="16" column="23" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
           <folding>
+            <element signature="e#611#612#0" expanded="true" />
             <element signature="e#663#664#0" expanded="true" />
           </folding>
         </state>
@@ -770,8 +816,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pt/c01interfaces/s01knowledge/s01base/impl/BaseConhecimento.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="1470">
-          <caret line="14" column="49" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="126" max-vertical-offset="1782">
+          <caret line="15" column="49" selection-start-line="15" selection-start-column="49" selection-end-line="15" selection-end-column="49" />
           <folding />
         </state>
       </provider>
