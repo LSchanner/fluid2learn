@@ -24,7 +24,7 @@ public class EnquirerMaze implements IEnquirer {
 
         String stop = responder.ask("aqui");
 
-        while (!stop.equalsIgnoreCase("saida")) {
+        while (!stop.equalsIgnoreCase("saida") && !stop.equalsIgnoreCase("nao")) {
 
             cont = true;
             if (!stack.empty())
@@ -48,20 +48,22 @@ public class EnquirerMaze implements IEnquirer {
             }
 
             if (cont && !stack.empty()) {
-                System.out.println("Voltando");
                 pos = stack.peek();
+                System.out.println("*** Voltando para --> " + direcoes[(pos+2)%4]);
                 responder.move(direcoes[(stack.pop() + 2)%4]);
-            }
-
-            stop = responder.ask("aqui");
+            } else if (cont && stack.empty())
+                stop = "nao";
+            else stop = responder.ask("aqui");
 
         }
 
         if (stop.equalsIgnoreCase("saida")) {
-            System.out.println("ACHEEEEEEEEEEEI");
+            System.out.println("ACHEEEEEEEEEEEI!!!");
             return true;
+        } else {
+            System.out.println("NÃO ACHEI A SAIDA!!!");
+            return false;
         }
-        return false;
 
     }
 
