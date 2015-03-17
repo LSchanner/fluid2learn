@@ -25,7 +25,7 @@ public class Orchestrator
 			System.out.println("Enquirer com " + listaAnimais[animal] + "...");
 			stat = new Statistics();
 			resp = new ResponderAnimals(stat, listaAnimais[animal]);
-			enq = new EnquirerAnimals();
+			enq = new EnquirerAnimals(base);
 			enq.connect(resp);
 			enq.discover();
 			System.out.println("----------------------------------------------------------------------------------------\n");

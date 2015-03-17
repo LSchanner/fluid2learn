@@ -11,8 +11,7 @@ import pt.c02classes.s01knowledge.s02app.actors.EnquirerMaze;
 import pt.c02classes.s01knowledge.s02app.actors.ResponderAnimals;
 import pt.c02classes.s01knowledge.s02app.actors.ResponderMaze;
 
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
+import java.io.*;
 import java.util.Scanner;
 
 public class OrchestratorInit
@@ -38,7 +37,7 @@ public class OrchestratorInit
                 System.out.println("Enquirer com " + listaAnimais[animal] + "...");
                 stat = new Statistics();
                 resp = new ResponderAnimals(stat, listaAnimais[animal]);
-                enq = new EnquirerAnimals();
+                enq = new EnquirerAnimals(base);
                 enq.connect(resp);
                 enq.discover();
                 System.out.println("----------------------------------------------------------------------------------------\n");
@@ -46,15 +45,17 @@ public class OrchestratorInit
         }else if(s.equalsIgnoreCase("maze")) {
             System.out.print("Qual labirinto? ");
             String mapa = in.nextLine();
+            mapa.toLowerCase();
 
-            if (mapa.equalsIgnoreCase("mordor")) {
-                System.out.println("Enquirer com Mordor...");
-                stat = new Statistics();
-                resp = new ResponderMaze(stat, "mordor");
-                enq = new EnquirerMaze();
-                enq.connect(resp);
-                enq.discover();
-            } else System.out.println("Mapa não existe");
+
+            System.out.println("Enquirer com " + mapa + " ...");
+            stat = new Statistics();
+            resp = new ResponderMaze(stat, mapa);
+            enq = new EnquirerMaze();
+            enq.connect(resp);
+            enq.discover();
+
+
             System.out.println("----------------------------------------------------------------------------------------\n");
         }
     }
