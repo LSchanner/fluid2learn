@@ -1,7 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_IjfngM8GEeSTiM_G8rWJKg" name="model">
-  <packagedElement xmi:type="uml:Class" xmi:id="_i2nWAM8GEeSTiM_G8rWJKg" name="EnquirerAnimals" visibility="package">
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_dxnfMM8TEeSaTpiYbVpMzw" name="responder" type="_XDASIM8TEeSaTpiYbVpMzw"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_i2nWAM8GEeSTiM_G8rWJKg" name="EnquirerTruco" visibility="package">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_dxnfMM8TEeSaTpiYbVpMzw" name="responders"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_19QEANCYEeSaJoXTWC0vbg" name="jogadores" visibility="private" type="_tUc3oNCXEeSaJoXTWC0vbg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FgSpMNCbEeSaJoXTWC0vbg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FgVsgNCbEeSaJoXTWC0vbg" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_VDzFQNCZEeSaJoXTWC0vbg" name="pontuação" visibility="private"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_zhbsYNCZEeSaJoXTWC0vbg" name="Rodada" visibility="private"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_1Y-c0NCZEeSaJoXTWC0vbg" name="Turno" visibility="private"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_QZ4JQNCYEeSaJoXTWC0vbg" name="connect">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_bJ2S8NCYEeSaJoXTWC0vbg" name="A" type="_tUc3oNCXEeSaJoXTWC0vbg"/>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_eFwqcNCYEeSaJoXTWC0vbg" name="B" type="_tUc3oNCXEeSaJoXTWC0vbg"/>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_f_RJwNCYEeSaJoXTWC0vbg" name="C" type="_tUc3oNCXEeSaJoXTWC0vbg"/>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_iII6wNCYEeSaJoXTWC0vbg" name="D" type="_tUc3oNCXEeSaJoXTWC0vbg"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_D6pWgNCaEeSaJoXTWC0vbg" name="playGame"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_jUvl4NCaEeSaJoXTWC0vbg" name="connect" visibility="public">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_r-r3MNCaEeSaJoXTWC0vbg" name="A" type="_tUc3oNCXEeSaJoXTWC0vbg"/>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_2R8PsNCaEeSaJoXTWC0vbg" name="B" type="_tUc3oNCXEeSaJoXTWC0vbg"/>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_57ZpsNCaEeSaJoXTWC0vbg" name="C" type="_tUc3oNCXEeSaJoXTWC0vbg"/>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_8AQdYNCaEeSaJoXTWC0vbg" name="D" type="_tUc3oNCXEeSaJoXTWC0vbg"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_SGozwNCdEeSaJoXTWC0vbg" name="getTurno"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_nbhGoNCdEeSaJoXTWC0vbg" name="getRodada"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_ov5foNCdEeSaJoXTWC0vbg" name="getPontuação"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:DataType" xmi:id="_XDASIM8TEeSaTpiYbVpMzw" name="IResponder"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_tUc3oNCXEeSaJoXTWC0vbg" name="ResponderTruco">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_0m1DoNCYEeSaJoXTWC0vbg" name="Cartas"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_tYU4wNCcEeSaJoXTWC0vbg" name="JogaCarta">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_GEROENCdEeSaJoXTWC0vbg" name="jogo" type="_i2nWAM8GEeSTiM_G8rWJKg"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_bnk-gNCdEeSaJoXTWC0vbg" name="RecebeCartas">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_gBaFgNCdEeSaJoXTWC0vbg" name="cartas"/>
+    </ownedOperation>
+  </packagedElement>
 </uml:Model>
