@@ -7,6 +7,7 @@
     <mergedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#_0"/>
   </packageMerge>
   <packagedElement xmi:type="uml:Class" xmi:id="_sz6vAM86EeSyC_Vz98-vdw" name="EnquirerAnimals">
+    <generalization xmi:type="uml:Generalization" xmi:id="_MdUbMNDnEeSiF7AEmhm0FA" general="_mxwOwNDbEeSiF7AEmhm0FA"/>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_MEKrQNCuEeSiF7AEmhm0FA" name="bc"/>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_OKmMQNCuEeSiF7AEmhm0FA" name="memo"/>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_PVnN4NCuEeSiF7AEmhm0FA" name="obj"/>
@@ -32,7 +33,9 @@
       </ownedParameter>
     </ownedOperation>
   </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_6TtaANCwEeSiF7AEmhm0FA" name="EnquirerMaze"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_6TtaANCwEeSiF7AEmhm0FA" name="EnquirerMaze">
+    <generalization xmi:type="uml:Generalization" xmi:id="_L3bf4NDnEeSiF7AEmhm0FA" general="_mxwOwNDbEeSiF7AEmhm0FA"/>
+  </packagedElement>
   <packagedElement xmi:type="uml:Interface" xmi:id="_YJ8p8NCxEeSiF7AEmhm0FA" name="IResponder">
     <ownedOperation xmi:type="uml:Operation" xmi:id="_xT_QgNCxEeSiF7AEmhm0FA" name="ask" visibility="public">
       <ownedParameter xmi:type="uml:Parameter" xmi:id="_5vpOMNCxEeSiF7AEmhm0FA" name="question" effect="create">
@@ -65,6 +68,7 @@
     </ownedOperation>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_obbUYNCxEeSiF7AEmhm0FA" name="ResponderAnimals">
+    <generalization xmi:type="uml:Generalization" xmi:id="_NAv4YNDnEeSiF7AEmhm0FA" general="_u-axYNDfEeSiF7AEmhm0FA"/>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_dTIU0NCyEeSiF7AEmhm0FA" name="animal" visibility="private">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
     </ownedAttribute>
@@ -90,6 +94,7 @@
     </ownedOperation>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_Ni8kINCzEeSiF7AEmhm0FA" name="ResponderMaze">
+    <generalization xmi:type="uml:Generalization" xmi:id="_NWTRoNDnEeSiF7AEmhm0FA" general="_u-axYNDfEeSiF7AEmhm0FA"/>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_khRhENCzEeSiF7AEmhm0FA" name="maze" visibility="private">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
     </ownedAttribute>
@@ -116,6 +121,7 @@
     </ownedOperation>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_yrZ6INDXEeSiF7AEmhm0FA" name="EnquirerTruco">
+    <generalization xmi:type="uml:Generalization" xmi:id="_LHw9gNDnEeSiF7AEmhm0FA" general="_mxwOwNDbEeSiF7AEmhm0FA"/>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_BEY_oNDdEeSiF7AEmhm0FA" name="pontuacao">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
     </ownedAttribute>
@@ -126,22 +132,17 @@
     <ownedOperation xmi:type="uml:Operation" xmi:id="_5LaCcNDiEeSiF7AEmhm0FA" name="getPontuacao"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_zjq-4NDXEeSiF7AEmhm0FA" name="ResponderTruco">
+    <generalization xmi:type="uml:Generalization" xmi:id="_NurVYNDnEeSiF7AEmhm0FA" general="_u-axYNDfEeSiF7AEmhm0FA"/>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_DWF4UNDkEeSiF7AEmhm0FA" name="Cartas" visibility="private"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_84dtkNDjEeSiF7AEmhm0FA" name="RecebeCartas">
       <ownedParameter xmi:type="uml:Parameter" xmi:id="_CVL08NDkEeSiF7AEmhm0FA" name="cartas"/>
     </ownedOperation>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_mxwOwNDbEeSiF7AEmhm0FA" name="EnquirerGeneric">
-    <generalization xmi:type="uml:Generalization" xmi:id="_usKEENDcEeSiF7AEmhm0FA" general="_yrZ6INDXEeSiF7AEmhm0FA"/>
-    <generalization xmi:type="uml:Generalization" xmi:id="_zl6BQNDcEeSiF7AEmhm0FA" general="_6TtaANCwEeSiF7AEmhm0FA"/>
-    <generalization xmi:type="uml:Generalization" xmi:id="_22avwNDcEeSiF7AEmhm0FA" general="_sz6vAM86EeSyC_Vz98-vdw"/>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_EN0SsNCxEeSiF7AEmhm0FA" name="responder" type="_YJ8p8NCxEeSiF7AEmhm0FA"/>
     <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_IA3fANDcEeSiF7AEmhm0FA" client="_mxwOwNDbEeSiF7AEmhm0FA" supplier="_IsAI0M8-EeSyC_Vz98-vdw" contract="_IsAI0M8-EeSyC_Vz98-vdw"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_u-axYNDfEeSiF7AEmhm0FA" name="ResponderGeneric">
-    <generalization xmi:type="uml:Generalization" xmi:id="_oP8RwNDgEeSiF7AEmhm0FA" general="_zjq-4NDXEeSiF7AEmhm0FA"/>
-    <generalization xmi:type="uml:Generalization" xmi:id="_owwf0NDgEeSiF7AEmhm0FA" general="_Ni8kINCzEeSiF7AEmhm0FA"/>
-    <generalization xmi:type="uml:Generalization" xmi:id="_peM0oNDgEeSiF7AEmhm0FA" general="_obbUYNCxEeSiF7AEmhm0FA"/>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_lu1V0NCyEeSiF7AEmhm0FA" name="obj" visibility="private"/>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_hRr1ENCyEeSiF7AEmhm0FA" name="estatisticas" visibility="private"/>
     <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_4LeW0NDfEeSiF7AEmhm0FA" client="_u-axYNDfEeSiF7AEmhm0FA" supplier="_YJ8p8NCxEeSiF7AEmhm0FA" contract="_YJ8p8NCxEeSiF7AEmhm0FA"/>
