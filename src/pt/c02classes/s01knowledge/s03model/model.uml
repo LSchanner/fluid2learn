@@ -35,4 +35,5 @@
       <ownedParameter xmi:type="uml:Parameter" xmi:id="_gBaFgNCdEeSaJoXTWC0vbg" name="cartas"/>
     </ownedOperation>
   </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_eXBhEM8NEeSRc52GoSCKOg" name="Class1"/>
 </uml:Model>
